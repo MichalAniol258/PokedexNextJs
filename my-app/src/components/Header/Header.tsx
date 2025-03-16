@@ -85,17 +85,17 @@ export default function Header() {
 
 
                     <NavbarItem className="text-violet-200">
-                        <Link className="text-violet-200 hoverik" href="http://localhost:3000#features">
+                        <Link className="text-violet-200 hoverik" href="/#features">
                             Features
                         </Link>
                     </NavbarItem>
                     <NavbarItem className="text-violet-200">
-                        <Link href="http://localhost:3000#home" className={`text-violet-200 hoverik`}>
+                        <Link href="/#home" className={`text-violet-200 hoverik`}>
                             Home
                         </Link>
                     </NavbarItem>
                     <NavbarItem className="text-violet-200">
-                        <Link href="http://localhost:3000/pokemons" className="text-violet-200 hoverik">
+                        <Link href="/pokemons" className="text-violet-200 hoverik">
                             Pokedex
                         </Link>
                     </NavbarItem>
@@ -106,18 +106,18 @@ export default function Header() {
                         <AcmeLogo />
                     </NavbarBrand>
                     <NavbarItem className="text-violet-200">
-                        <Link className="telefony2 text-violet-200 hoverik" href="http://localhost:3000#features">
+                        <Link className="telefony2 text-violet-200 hoverik" href="/#features">
                             Features
                         </Link>
                     </NavbarItem>
                     <NavbarItem className="telefony2 text-violet-200">
-                        <Link href="http://localhost:3000#home" className={`text-violet-200 hoverik`}>
+                        <Link href="/#home" className={`text-violet-200 hoverik`}>
                             Home
                         </Link>
                     </NavbarItem>
                     <NavbarItem className="telefony2 text-violet-200">
-                        <Link href={'http://localhost:3000#cat'} className="text-violet-200 hoverik">
-                            Goofy ahh cat
+                        <Link href={'/pokemons'} className="text-violet-200 hoverik">
+                            Pokedex
                         </Link>
                     </NavbarItem>
                 </NavbarContent>
@@ -129,7 +129,7 @@ export default function Header() {
                                 <Link href="/login" className="text-violet-500">Login</Link>
                             </NavbarItem>
                             <NavbarItem className="text-violet-500">
-                                <Button as={Link} className="text-violet-500 bg-violet-950 bg-opacity-20" href="http://localhost:3000/register" variant="flat">
+                                <Button as={Link} className="text-violet-500 bg-violet-950 bg-opacity-20" href="/register" variant="flat">
                                     Sign Up
                                 </Button>
                             </NavbarItem>

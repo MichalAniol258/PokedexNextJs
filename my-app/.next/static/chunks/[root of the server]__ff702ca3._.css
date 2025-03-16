@@ -376,10 +376,6 @@
     left: 0;
   }
 
-  .\!z-\[200\] {
-    z-index: 200 !important;
-  }
-
   .\!z-\[20000\] {
     z-index: 20000 !important;
   }
@@ -394,10 +390,6 @@
 
   .z-\[200\] {
     z-index: 200;
-  }
-
-  .z-\[200px\] {
-    z-index: 200px;
   }
 
   .z-\[1999\] {
@@ -655,16 +647,8 @@
     max-width: var(--container-xl);
   }
 
-  .min-w-\[1px\] {
-    min-width: 1px;
-  }
-
   .min-w-\[90px\] {
     min-width: 90px;
-  }
-
-  .min-w-\[200px\] {
-    min-width: 200px;
   }
 
   .transform {
