@@ -283,6 +283,10 @@
     z-index: 20000 !important;
   }
 
+  .\!z-\[10000000000000\] {
+    z-index: 2147483647 !important;
+  }
+
   .z-10 {
     z-index: 10;
   }
@@ -301,6 +305,10 @@
 
   .z-\[10000\] {
     z-index: 10000;
+  }
+
+  .z-\[10000000000000\] {
+    z-index: 2147483647;
   }
 
   .z-auto {
@@ -363,10 +371,6 @@
 
   .my-\[4\] {
     margin-block: 4px;
-  }
-
-  .my-\[5\] {
-    margin-block: 5px;
   }
 
   .mt-2 {
@@ -438,10 +442,6 @@
     height: calc(var(--spacing) * 5);
   }
 
-  .\!h-\[300px\] {
-    height: 300px !important;
-  }
-
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -476,6 +476,10 @@
 
   .h-screen {
     height: 100vh;
+  }
+
+  .max-h-full {
+    max-height: 100%;
   }
 
   .min-h-\[100px\] {

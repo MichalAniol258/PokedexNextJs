@@ -76,7 +76,7 @@ export default function ImageUploader() {
                         setImage(image);
 
                     }} />
-                    {error && <p className='absolute' style={{ zIndex: 5, color: "red" }}>{error}</p>}
+                    {error && <p className='absolute !z-[10000000000000]' style={{ color: "red" }}>{error}</p>}
                 </div>
 
 
