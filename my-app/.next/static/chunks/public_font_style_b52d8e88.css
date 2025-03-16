@@ -1,0 +1,114 @@
+/* [project]/public/font/style.css [app-client] (css) */
+@font-face {
+  font-family: Zuume Regular;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Regular), url("../media/Zuume Regular.242dc9e4.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Italic), url("../media/Zuume Italic.fddc0c28.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume ExtraLight;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume ExtraLight), url("../media/Zuume ExtraLight.c4d4f478.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume ExtraLight Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume ExtraLight Italic), url("../media/Zuume ExtraLight Italic.0d68b8ed.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Light;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Light), url("../media/Zuume Light.19239be6.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Light Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Light Italic), url("../media/Zuume Light Italic.fb69b73d.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Medium;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Medium), url("../media/Zuume Medium.2e4541f4.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Medium Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Medium Italic), url("../media/Zuume Medium Italic.8b8ac154.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume SemiBold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume SemiBold), url("../media/Zuume SemiBold.ad43d094.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume SemiBold Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume SemiBold Italic), url("../media/Zuume SemiBold Italic.51e00f7a.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Bold), url("../media/Zuume Bold.19536aa0.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Bold Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Bold Italic), url("../media/Zuume Bold Italic.7de5fb99.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume ExtraBold;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume ExtraBold), url("../media/Zuume ExtraBold.fc34d164.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume ExtraBold Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume ExtraBold Italic), url("../media/Zuume ExtraBold Italic.725707cf.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Black;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Black), url("../media/Zuume Black.1639a778.woff") format("woff");
+}
+
+@font-face {
+  font-family: Zuume Black Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: local(Zuume Black Italic), url("../media/Zuume Black Italic.747ad821.woff") format("woff");
+}
+
+/*# sourceMappingURL=public_font_style_b52d8e88.css.map*/

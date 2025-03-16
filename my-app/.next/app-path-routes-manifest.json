@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/analyze/route": "/api/analyze",
+  "/api/prompt/route": "/api/prompt",
+  "/favicon.ico/route": "/favicon.ico",
+  "/chat/page": "/chat",
+  "/page": "/",
+  "/pokemons/[id]/page": "/pokemons/[id]",
+  "/login/page": "/login",
+  "/pokemons/page": "/pokemons",
+  "/upload/page": "/upload",
+  "/register/page": "/register"
+}
