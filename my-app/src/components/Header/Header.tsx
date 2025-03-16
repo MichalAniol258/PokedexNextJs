@@ -21,7 +21,7 @@ import Zdj from "../../../public/logo/noweLogo.png";
 
 export const AcmeLogo = () => {
     return (
-        <Link href="http://localhost:3000">
+        <Link href="/">
             <Image
                 src={Zdj}
                 alt=""
