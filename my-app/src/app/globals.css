@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.fontcik {
+    font-style: italic;
+    font-family: Zuume Regular;
+}
+
+.fontcik2 {
+    font-family: Zuume ExtraLight;
+}
+
+:focus {
+    outline: none !important;
+    border: none !important;
+}
+
+.landing-page-bg {
+    background-image: url("../../public/tapeta.png");
+}
+
+.login-page-bg {
+    background-image: url("../../public/tapeta-alt.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.siemano {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-clip: border-box;
+}
+
+.background {
+    background-color: #8b5cf6 !important;
+    color: #2e1065 !important;
+    font-weight: 600 !important;
+}
+
+
+
+#features {
+    background-color: #2e1065;
+}
+
+.kolorek {
+    color: #8b5cf6;
+}
+
+
+.hoverik:hover {
+    color: #8b5cf6 !important;
+}
+
+.active {
+    color: #8b5cf6 !important;
+}
+
+
+@media only screen and (min-width: 764px) {
+
+    .telefony {
+        display: none !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 764px) {
+
+    .telefony2 {
+        display: none !important;
+    }
+
+
+}
+
+
+@media only screen and (max-width:500px) {
+    .kamera {
+        padding: 2rem !important;
+    }
+}
