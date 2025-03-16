@@ -96,7 +96,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\ramia\\Downloads\\my-app",
+    "outputFileTracingRoot": "C:\\Users\\ramia\\Documents\\Projekty\\PokedexNextJs\\my-app",
     "experimental": {
       "allowedDevOrigins": [],
       "nodeMiddleware": false,
@@ -175,7 +175,7 @@
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
       "turbo": {
-        "root": "C:\\Users\\ramia\\Downloads\\my-app"
+        "root": "C:\\Users\\ramia\\Documents\\Projekty\\PokedexNextJs\\my-app"
       },
       "typedRoutes": false,
       "typedEnv": false,
@@ -281,7 +281,7 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts"
   },
-  "appDir": "C:\\Users\\ramia\\Downloads\\my-app",
+  "appDir": "C:\\Users\\ramia\\Documents\\Projekty\\PokedexNextJs\\my-app",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

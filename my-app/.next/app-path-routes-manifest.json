@@ -4,10 +4,10 @@
   "/api/prompt/route": "/api/prompt",
   "/favicon.ico/route": "/favicon.ico",
   "/chat/page": "/chat",
+  "/login/page": "/login",
   "/page": "/",
   "/pokemons/[id]/page": "/pokemons/[id]",
-  "/login/page": "/login",
   "/pokemons/page": "/pokemons",
-  "/upload/page": "/upload",
-  "/register/page": "/register"
+  "/register/page": "/register",
+  "/upload/page": "/upload"
 }

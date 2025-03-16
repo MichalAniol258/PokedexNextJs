@@ -73,72 +73,96 @@ export default function Header() {
 
     return (
         <HeroUIProvider>
-            <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
-                {/* Mobile Menu Toggle */}
-                <NavbarContent className="telefony sm:hidden" justify="start">
+            <Navbar className="fixed !z-[20000]" isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+                <NavbarContent className="telefony sm:hidden " justify="start">
                     <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
                 </NavbarContent>
 
-                {/* Logo */}
                 <NavbarBrand>
                     <AcmeLogo />
                 </NavbarBrand>
+                <NavbarContent className="telefony2 sm:flex gap-4 " justify="center">
 
-                {/* Desktop Navigation */}
-                <NavbarContent className="sm:flex gap-4" justify="center">
-                    {menuItems.map((item, index) => (
-                        <NavbarItem key={index} className="text-violet-200">
-                            <Link href={item.href} className="text-violet-200 hoverik">
-                                {item.name}
-                            </Link>
-                        </NavbarItem>
-                    ))}
+
+                    <NavbarItem className="text-violet-200">
+                        <Link className="text-violet-200 hoverik" href="http://localhost:3000#features">
+                            Features
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem className="text-violet-200">
+                        <Link href="http://localhost:3000#home" className={`text-violet-200 hoverik`}>
+                            Home
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem className="text-violet-200">
+                        <Link href="http://localhost:3000/pokemons" className="text-violet-200 hoverik">
+                            Pokedex
+                        </Link>
+                    </NavbarItem>
                 </NavbarContent>
 
-                {/* Auth Buttons */}
+                <NavbarContent className="telefony sm:flex gap-4" justify="center">
+                    <NavbarBrand className="telefony2">
+                        <AcmeLogo />
+                    </NavbarBrand>
+                    <NavbarItem className="text-violet-200">
+                        <Link className="telefony2 text-violet-200 hoverik" href="http://localhost:3000#features">
+                            Features
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem className="telefony2 text-violet-200">
+                        <Link href="http://localhost:3000#home" className={`text-violet-200 hoverik`}>
+                            Home
+                        </Link>
+                    </NavbarItem>
+                    <NavbarItem className="telefony2 text-violet-200">
+                        <Link href={'http://localhost:3000#cat'} className="text-violet-200 hoverik">
+                            Goofy ahh cat
+                        </Link>
+                    </NavbarItem>
+                </NavbarContent>
+
                 <NavbarContent justify="end">
                     {!User ? (
                         <>
                             <NavbarItem className="lg:flex text-violet-500">
-                                <Link href="/login" className="text-violet-500">
-                                    Login
-                                </Link>
+                                <Link href="/login" className="text-violet-500">Login</Link>
                             </NavbarItem>
                             <NavbarItem className="text-violet-500">
-                                <Button
-                                    as={Link}
-                                    href="/register"
-                                    className="text-violet-500 bg-violet-950 bg-opacity-20"
-                                    variant="flat"
-                                >
+                                <Button as={Link} className="text-violet-500 bg-violet-950 bg-opacity-20" href="http://localhost:3000/register" variant="flat">
                                     Sign Up
                                 </Button>
                             </NavbarItem>
                         </>
                     ) : (
                         <NavbarItem className="lg:flex text-violet-500">
-                            <Button
-                                style={{ background: "black" }}
-                                onClick={handleLogout}
-                                className="text-violet-500"
-                            >
-                                Logout
-                            </Button>
+                            <Button style={{ background: "black" }} onPress={handleLogout} className="text-violet-500">Logout</Button>
                         </NavbarItem>
                     )}
                 </NavbarContent>
 
-                {/* Mobile Navigation Menu */}
-                <NavbarMenu>
+                <NavbarMenu className="!z-[20000]">
                     {menuItems.map((item, index) => (
-                        <NavbarMenuItem key={index}>
-                            <Link href={item.href} className="w-full text-violet-200 hoverik" onClick={() => setIsMenuOpen(false)}>
+                        <NavbarMenuItem onChange={() => setIsMenuOpen(false)} key={`${item}-${index}`}>
+                            <Link
+                                onClick={() => setIsMenuOpen(false)}
+                                className="w-full"
+
+                                color={
+                                    index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                                }
+                                href={item.href}
+
+                            >
                                 {item.name}
                             </Link>
                         </NavbarMenuItem>
                     ))}
                 </NavbarMenu>
             </Navbar>
-        </HeroUIProvider>
+
+
+        </HeroUIProvider >
+
     );
 }

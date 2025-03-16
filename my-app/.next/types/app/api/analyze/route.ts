@@ -1,4 +1,4 @@
-// File: C:\Users\ramia\Downloads\my-app\src\app\api\analyze\route.ts
+// File: C:\Users\ramia\Documents\Projekty\PokedexNextJs\my-app\src\app\api\analyze\route.ts
 import * as entry from '../../../../../src/app/api/analyze/route.js'
 import type { NextRequest } from 'next/server.js'
 

@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation'; // Use useParams instead of useRouter
-import { HistoryElem, PokemonDetection } from "@/types/history";
+import { HistoryElem } from "@/types/history";
 import { createClient } from "@/utils/supabase/client";
 import Image from 'next/image';
 // Initialize the Supabase client (use your actual Supabase URL and key here)

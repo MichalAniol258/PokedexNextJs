@@ -1,4 +1,4 @@
-// File: C:\Users\ramia\Downloads\my-app\src\app\pokemons\[id]\page.tsx
+// File: C:\Users\ramia\Documents\Projekty\PokedexNextJs\my-app\src\app\pokemons\[id]\page.tsx
 import * as entry from '../../../../../src/app/pokemons/[id]/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

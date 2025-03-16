@@ -13,11 +13,13 @@ const CameraComponent: React.FC<CameraComponentProps> = ({ setImage, error }) =>
     const videoRef = useRef<HTMLVideoElement>(null);
     const pathname = usePathname();
     const [imageSrc, setImageSrc] = useState<string | null>(null);
-    console.log(imageSrc)
+
     // Start the camera
     const startCamera = async () => {
         try {
-            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            const stream = await navigator.mediaDevices.getUserMedia({
+                video: { facingMode: "user" } // Ustawienie przedniej kamery
+            });
             if (videoRef.current) {
                 videoRef.current.srcObject = stream;
             }
@@ -78,7 +80,7 @@ const CameraComponent: React.FC<CameraComponentProps> = ({ setImage, error }) =>
 
             <div className="absolute bottom-[0]">
 
-                <Image src={'/capture.svg'} width={50} height={50} alt="" onClick={capturePhoto} className="min-w-[90px] kamera top-[4.4rem] relative  cursor-pointer" />
+                <Image src={'/capture.svg'} width={50} height={50} alt="" onClick={capturePhoto} className="min-w-[90px] top-[4.4rem] relative  cursor-pointer" />
 
 
             </div>
