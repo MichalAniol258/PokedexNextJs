@@ -18,7 +18,7 @@ const CameraComponent: React.FC<CameraComponentProps> = ({ setImage, error }) =>
     const startCamera = async () => {
         try {
             const stream = await navigator.mediaDevices.getUserMedia({
-                video: { facingMode: "user" } // Ustawienie przedniej kamery
+                video: { facingMode: "environment" } // Ustawienie przedniej kamery
             });
             if (videoRef.current) {
                 videoRef.current.srcObject = stream;

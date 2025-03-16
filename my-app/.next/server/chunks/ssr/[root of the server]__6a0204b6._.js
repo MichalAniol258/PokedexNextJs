@@ -74,7 +74,7 @@ const CameraComponent = ({ setImage, error })=>{
         try {
             const stream = await navigator.mediaDevices.getUserMedia({
                 video: {
-                    facingMode: "user"
+                    facingMode: "environment"
                 } // Ustawienie przedniej kamery
             });
             if (videoRef.current) {
