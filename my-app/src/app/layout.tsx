@@ -9,6 +9,7 @@ import "../../public/font/style.css"
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/page";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

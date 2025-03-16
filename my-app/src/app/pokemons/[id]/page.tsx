@@ -55,29 +55,33 @@ const Page = () => {
 
     const item = pokemon?.body;
     return (
-        <div className="flex bg-violet-950">
+        <div className="custom-layout flex flex-col md:flex-row bg-violet-950">
             {pokemon ? (
                 <>
-                    <div className="w-1/2  relative">
+                    <div className="w-full md:w-1/2 relative">
                         <img
                             src={pokemon.url}
                             alt="Uploaded Preview"
                             className="w-full h-full object-cover"
                         />
                     </div>
-                    <div className="w-1/2 text-violet-200 p-4 flex flex-col justify-center items-right !p-[100px]">
+                    <div className="w-full md:w-1/2 text-violet-200 flex flex-col justify-center md:items-right p-6 md:!p-[100px]">
                         {item && (
                             <>
                                 <h2 className="text-2xl text-right"><strong>{item.name} detected!</strong></h2>
-                                <p className="text-right !text-violet-300"> {item.description}</p>
-                                <p className="text-right !text-violet-300"><strong className='text-violet-200'>Pokedex number:</strong> {item.pokedex_code}</p>
-                                <p className="text-right !text-violet-300"><strong className='text-violet-200'>Type:</strong> {item.type}</p>
+                                <p className="text-right !text-violet-300">{item.description}</p>
+                                <p className="text-right !text-violet-300">
+                                    <strong className='text-violet-200'>Pokedex number:</strong> {item.pokedex_code}
+                                </p>
+                                <p className="text-right !text-violet-300">
+                                    <strong className='text-violet-200'>Type:</strong> {item.type}
+                                </p>
                                 {item.weakness && (
                                     <>
                                         <h3 className="text-center !text-violet-200">Weakness:</h3>
                                         <div className="flex justify-center flex-wrap">
                                             {item.weakness.map((weakness: string, index: number) => (
-                                                <span key={index} className="inline-block bg-violet-300 text-gray-950 rounded-full py-1 px-3 m-1 text-sm capitalize  ">
+                                                <span key={index} className="inline-block bg-violet-300 text-gray-950 rounded-full py-1 px-3 m-1 text-sm capitalize">
                                                     {weakness}
                                                 </span>
                                             ))}
@@ -85,14 +89,13 @@ const Page = () => {
                                     </>
                                 )}
                                 {item.properties && (
-                                    <div style={{ marginTop: '10px' }}>
+                                    <div className="mt-4">
                                         {Object.entries(item.properties).map(([key, value], i) => (
                                             <div key={i}>
                                                 {value && (
                                                     <div className="flex justify-between border-b !border-violet-300 py-1">
-
                                                         <span className='font-semibold'>{key}:</span>
-                                                        {typeof value === 'string' ? <span className=''>{value}</span> : ''}
+                                                        {typeof value === 'string' ? <span>{value}</span> : ''}
                                                     </div>
                                                 )}
                                             </div>
@@ -107,6 +110,7 @@ const Page = () => {
                 <div>No Pokémon found</div>
             )}
         </div>
+
 
 
     );

@@ -87,11 +87,16 @@ html {
     padding-inline: 15rem;
 }
 
+
+
 @media only screen and (min-width: 764px) {
 
     .telefony {
         display: none !important;
     }
+
+
+
 
 
 }
@@ -110,6 +115,10 @@ html {
 
 
 
+
+
+
+
 }
 
 
@@ -119,9 +128,23 @@ html {
     }
 }
 
+.custom-layout {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+
 
 @media only screen and (max-width:500px) {
     .kamera {
         padding: 2rem !important;
     }
+}
+
+@media (min-width: 768px) {
+    .custom-layout {
+        flex-direction: row !important;
+    }
+
 }

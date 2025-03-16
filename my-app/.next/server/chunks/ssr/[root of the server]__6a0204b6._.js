@@ -124,14 +124,16 @@ const CameraComponent = ({ setImage, error })=>{
         }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "absolute inset-0 flex items-center h-[825px] justify-center z-[1]",
+        className: "absolute inset-0 flex items-center  justify-center z-[1]",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                 ref: videoRef,
+                width: 250,
+                height: 250,
                 autoPlay: true,
                 playsInline: true,
                 muted: true,
-                className: "w-[425px] kamera aspect-square rounded-full object-cover"
+                className: "w-[325px] aspect-square rounded-full object-cover z-10"
             }, void 0, false, {
                 fileName: "[project]/src/components/Camera/Camera.tsx",
                 lineNumber: 72,
@@ -145,15 +147,15 @@ const CameraComponent = ({ setImage, error })=>{
                     height: 50,
                     alt: "",
                     onClick: capturePhoto,
-                    className: "min-w-[90px] top-[4.4rem] relative  cursor-pointer"
+                    className: "min-w-[80px]"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Camera/Camera.tsx",
-                    lineNumber: 83,
+                    lineNumber: 85,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Camera/Camera.tsx",
-                lineNumber: 81,
+                lineNumber: 83,
                 columnNumber: 13
             }, this)
         ]
@@ -239,7 +241,7 @@ function ImageUploader() {
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$heroui$2f$react$2f$node_modules$2f40$heroui$2f$card$2f$dist$2f$chunk$2d$MW56SEHC$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__card_default__as__Card$3e$__["Card"], {
-            className: "max-w-lg mx-auto p-4 space-y-4 bg-white shadow-lg rounded-none min-h-[900px] z-auto  bg-[url('/camera-bg.jpg')] bg-cover bg-no-repeat",
+            className: "max-w-lg mx-auto p-4 space-y-4 bg-white shadow-lg rounded-none h-screen     z-auto  bg-[url('/camera-bg.jpg')] bg-cover bg-no-repeat",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                     src: '/header.png',
@@ -254,31 +256,33 @@ function ImageUploader() {
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex justify-center w-full h-[800px]",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        src: '/captureNoBG.png',
-                        width: 250,
-                        height: 250,
-                        alt: "Image Description",
-                        className: "w-[700px]  object-contain opacity-80 z-[200]"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/upload/page.tsx",
-                        lineNumber: 66,
-                        columnNumber: 21
-                    }, this)
-                }, void 0, false, {
+                    className: "absolute  overflow-hidden inset-0 flex items-center h-auto justify-center z-[1]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            src: '/captureNoBGbetter.png',
+                            width: 250,
+                            height: 250,
+                            alt: "Image Description",
+                            className: "w-[325px] opacity-80 z-30 drop-shadow-2xl"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/upload/page.tsx",
+                            lineNumber: 66,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Camera$2f$Camera$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                            error: error,
+                            setImage: (image)=>{
+                                setImage(image);
+                            }
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/upload/page.tsx",
+                            lineNumber: 75,
+                            columnNumber: 21
+                        }, this)
+                    ]
+                }, void 0, true, {
                     fileName: "[project]/src/app/upload/page.tsx",
                     lineNumber: 65,
-                    columnNumber: 17
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Camera$2f$Camera$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                    error: error,
-                    setImage: (image)=>{
-                        setImage(image);
-                    }
-                }, void 0, false, {
-                    fileName: "[project]/src/app/upload/page.tsx",
-                    lineNumber: 75,
                     columnNumber: 17
                 }, this),
                 error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -289,14 +293,14 @@ function ImageUploader() {
                     children: error
                 }, void 0, false, {
                     fileName: "[project]/src/app/upload/page.tsx",
-                    lineNumber: 78,
+                    lineNumber: 80,
                     columnNumber: 27
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full p-[6px] my-[0] absolute left-[0] bottom-[0]   h-[5.5rem]  flex justify-center  bg-violet-500"
+                    className: "w-full p-[6px] my-[0] absolute left-[0] bottom-[0]   h-[5rem]   flex justify-center  bg-violet-500"
                 }, void 0, false, {
                     fileName: "[project]/src/app/upload/page.tsx",
-                    lineNumber: 80,
+                    lineNumber: 82,
                     columnNumber: 17
                 }, this),
                 loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -306,7 +310,7 @@ function ImageUploader() {
                     children: "Loading"
                 }, void 0, false, {
                     fileName: "[project]/src/app/upload/page.tsx",
-                    lineNumber: 87,
+                    lineNumber: 89,
                     columnNumber: 30
                 }, this)
             ]

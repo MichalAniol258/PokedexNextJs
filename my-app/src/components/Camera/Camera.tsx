@@ -68,19 +68,21 @@ const CameraComponent: React.FC<CameraComponentProps> = ({ setImage, error }) =>
     };
 
     return (
-        <div className="absolute inset-0 flex items-center h-[825px] justify-center z-[1]">
+        <div className="absolute inset-0 flex items-center  justify-center z-[1]">
             <video
                 ref={videoRef}
+                width={250}
+                height={250}
                 autoPlay
                 playsInline
                 muted
-                className="w-[425px] kamera aspect-square rounded-full object-cover"
+                className="w-[325px] aspect-square rounded-full object-cover z-10"
             ></video>
 
 
             <div className="absolute bottom-[0]">
 
-                <Image src={'/capture.svg'} width={50} height={50} alt="" onClick={capturePhoto} className="min-w-[90px] top-[4.4rem] relative  cursor-pointer" />
+                <Image src={'/capture.svg'} width={50} height={50} alt="" onClick={capturePhoto} className="min-w-[80px]" />
 
 
             </div>

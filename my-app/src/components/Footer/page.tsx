@@ -4,9 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Cat from "../../../public/cat.gif"
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
-    return (
+    const pathname = usePathname()
+    return !pathname.includes("/upload") && (
         <footer id="cat" className="bg-black text-white py-16">
             <div className="contaner mx-auto px-6 lg:px-32">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
