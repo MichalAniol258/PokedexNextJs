@@ -397,6 +397,10 @@
     z-index: 10000;
   }
 
+  .z-\[10000000\] {
+    z-index: 10000000;
+  }
+
   .z-auto {
     z-index: auto;
   }
@@ -1215,12 +1219,6 @@
   @media (width >= 48rem) {
     .md\:py-20 {
       padding-block: calc(var(--spacing) * 20);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:text-right {
-      text-align: right;
     }
   }
 

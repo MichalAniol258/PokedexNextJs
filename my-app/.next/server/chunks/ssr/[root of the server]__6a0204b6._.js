@@ -147,7 +147,7 @@ const CameraComponent = ({ setImage, error })=>{
                     height: 50,
                     alt: "",
                     onClick: capturePhoto,
-                    className: "min-w-[80px]"
+                    className: "min-w-[80px] z-[10000000] cursor-pointer"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Camera/Camera.tsx",
                     lineNumber: 85,
