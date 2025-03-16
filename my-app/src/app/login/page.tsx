@@ -76,7 +76,7 @@ export default function Login() {
 
                     <Button
                         style={{ background: "black" }}
-                        onPress={handleSubmit}
+                        type="submit"
                         className="w-full p-4 !bg-purple-600 text-white rounded-lg"
                         disabled={loading}
                     >
