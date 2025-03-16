@@ -17,7 +17,7 @@ const RecentHistory: React.FC<RecentHistoryProps> = ({ elems, setItem, withLinks
         <img
             src={elem.url}
             alt={elem.body.name}
-            className=" !h-[300px] !w-[300] h-full  object-cover rounded-lg"
+            className=" !w-[300] h-full  object-cover rounded-lg"
         />
 
     </div>)
@@ -30,7 +30,7 @@ const RecentHistory: React.FC<RecentHistoryProps> = ({ elems, setItem, withLinks
                         {withLinks ? <Link href={`/pokemons/${elem.id}`}>
                             <Component {...elem} />
                         </Link> : <Component {...elem} />}
-                        <div className='text-violet-100 my-[5]' > {elem.body.pokedex_code}</div>
+                        <div className='text-violet-100 my-[4]' > {elem.body.pokedex_code}</div>
                         <h3 className="mt-2 text-2xl text-violet-300 font-semibold">{elem.body.name || "No Pokemon"}</h3>
 
                         <div className='bg-violet-300 text-violet-950 rounded-full py-1 px-3 my-1 w-max  text-sm capitalize'>{elem.body.type}</div>

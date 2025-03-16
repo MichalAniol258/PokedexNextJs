@@ -82,7 +82,7 @@ const CameraComponent: React.FC<CameraComponentProps> = ({ setImage, error }) =>
 
             <div className="absolute bottom-[0]">
 
-                <Image src={'/capture.svg'} width={50} height={50} alt="" onClick={capturePhoto} className="min-w-[80px] z-[10000000] cursor-pointer" />
+                <Image src={'/capture.svg'} width={50} height={50} alt="" onClick={capturePhoto} className="min-w-[80px]  cursor-pointer" />
 
 
             </div>
