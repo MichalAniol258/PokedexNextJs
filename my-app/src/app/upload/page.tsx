@@ -58,7 +58,7 @@ export default function ImageUploader() {
 
     return (
         <>
-            <Card className="max-w-lg mx-auto p-4 space-y-4 bg-white shadow-lg rounded-none h-screen     z-auto  bg-[url('/camera-bg.jpg')] bg-cover bg-no-repeat">
+            <Card className="cosik max-w-lg mx-auto p-4 space-y-4 bg-white shadow-lg rounded-none h-screen     z-auto  bg-[url('/camera-bg.jpg')] bg-cover bg-no-repeat">
                 <Image src={'/header.png'} width={50} height={50} alt="" className="absolute left-[0] top-[0] w-full" unoptimized />
 
 

@@ -126,6 +126,33 @@ html {
     .blur-bg {
         filter: brightness(0.5);
     }
+
+    .cosik {
+        min-height: 100vh !important;
+        /* Zapewnia, że komponent zajmuje pełną wysokość ekranu */
+        width: 100% !important;
+        /* Pełna szerokość */
+        display: flex !important;
+        /* Flexbox do centrowania */
+        justify-content: center !important;
+        /* Poziome centrowanie */
+        align-items: center !important;
+        /* Pionowe centrowanie */
+        max-width: unset !important;
+        margin-inline: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+
+        /* Efekt cienia */
+        border-radius: 0 !important;
+        /* Brak zaokrągleń */
+
+        /* Tło z obrazkiem */
+        background-size: cover !important;
+        /* Pokrywa cały obszar */
+        background-repeat: no-repeat !important;
+        /* Nie powtarza tła */
+    }
 }
 
 .custom-layout {
@@ -140,6 +167,8 @@ html {
     .kamera {
         padding: 2rem !important;
     }
+
+
 }
 
 @media (min-width: 768px) {

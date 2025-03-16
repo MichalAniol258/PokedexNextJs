@@ -1397,6 +1397,18 @@ html {
   .blur-bg {
     filter: brightness(.5);
   }
+
+  .cosik {
+    min-height: 100vh !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: unset !important;
+    border-radius: 0 !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
 }
 
 .custom-layout {
